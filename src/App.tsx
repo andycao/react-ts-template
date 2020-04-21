@@ -7,24 +7,24 @@ import Index from "./pages/index";
 import QueryDemo from "./pages/queryDemo";
 
 function App() {
-  return (
-    <BrowserRouter>
-      <div className="App">
-        <Nav />
-        <Switch>
-          <Route path="/index">
-            <Index />
-          </Route>
-          <Route path="/list">
-            <List />
-          </Route>
-          <Route path="/queryDemo">
-            <QueryDemo />
-          </Route>
-        </Switch>
-      </div>
-    </BrowserRouter>
-  );
+    return (
+        <BrowserRouter>
+            <div className="App">
+                <Nav />
+                <Switch>
+                    <Route path="/index">
+                        <Index />
+                    </Route>
+                    <Route path="/list">
+                        <List />
+                    </Route>
+                    <Route path="/queryDemo">
+                        <QueryDemo />
+                    </Route>
+                </Switch>
+            </div>
+        </BrowserRouter>
+    );
 }
 
 export default App;
