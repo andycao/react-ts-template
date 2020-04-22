@@ -19,6 +19,11 @@ function Nav() {
             QueryDemo
           </NavLink>
         </li>
+        <li>
+          <NavLink to="/hits" activeClassName="active">
+            Hits-axios
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );

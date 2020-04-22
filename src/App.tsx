@@ -5,6 +5,7 @@ import Nav from "./Nav";
 import List from "./pages/list";
 import Index from "./pages/index";
 import QueryDemo from "./pages/queryDemo";
+import Hits from "./pages/reduxHits";
 
 function App() {
     return (
@@ -20,6 +21,9 @@ function App() {
                     </Route>
                     <Route path="/queryDemo">
                         <QueryDemo />
+                    </Route>
+                    <Route path="/hits">
+                        <Hits />
                     </Route>
                 </Switch>
             </div>

@@ -2,6 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import { withRouter } from "react-router";
 
+const money = require("../assets/about-money.png");
+
 // A simple component that shows the pathname of the current location
 class ShowTheLocation extends React.Component {
     static propTypes = {
@@ -11,10 +13,13 @@ class ShowTheLocation extends React.Component {
     };
 
     render() {
-        const { match, location, history } = this.props;
-
-        console.log(match, history);
-        return <div>You are now at {location.pathname}</div>;
+        const { location } = this.props;
+        return (
+            <div>
+                <p>You are now at {location.pathname}</p>
+                <img src={money} alt="" style={{ width: "200px" }} />
+            </div>
+        );
     }
 }
 

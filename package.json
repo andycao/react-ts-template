@@ -20,6 +20,7 @@
         "@types/react-router-dom": "^5.1.4",
         "@typescript-eslint/eslint-plugin": "^2.10.0",
         "@typescript-eslint/parser": "^2.10.0",
+        "axios": "^0.19.2",
         "babel-eslint": "10.1.0",
         "babel-jest": "^24.9.0",
         "babel-loader": "8.1.0",
@@ -74,9 +75,6 @@
         "webpack-dev-server": "3.10.3",
         "webpack-manifest-plugin": "2.2.0",
         "workbox-webpack-plugin": "4.3.1"
-    },
-    "eslintConfig": {
-        "extends": "react-app"
     },
     "browserslist": {
         "production": [
@@ -148,5 +146,9 @@
     "devDependencies": {
         "@andycao-npm/prettier-config": "^1.0.1"
     },
-    "prettier": "@andycao-npm/prettier-config"
+    "prettier": "@andycao-npm/prettier-config",
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "proxy": "https://hn.algolia.com"
 }
