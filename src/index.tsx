@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import * as serviceWorker from "./serviceWorker";
+import * as swRegister from "./swRegister";
 import "./style/index.scss";
 
 ReactDOM.render(
@@ -12,4 +12,4 @@ ReactDOM.render(
 );
 
 // Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.register();
+swRegister.register();
