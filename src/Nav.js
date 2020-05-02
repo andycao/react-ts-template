@@ -24,6 +24,16 @@ function Nav() {
             Hits-axios
           </NavLink>
         </li>
+        <li>
+          <NavLink to="/recursive" activeClassName="active">
+            recursive
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/hooks" activeClassName="active">
+            hooks
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );

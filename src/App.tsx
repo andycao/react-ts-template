@@ -6,12 +6,15 @@ import List from "./pages/list";
 import Index from "./pages/index";
 import QueryDemo from "./pages/queryDemo";
 import Hits from "./pages/reduxHits";
+import A from "./pages/A";
+import HooksTest from "./pages/HooksTest";
 
 function App() {
     return (
         <BrowserRouter>
             <div className="App">
                 <Nav />
+                <hr />
                 <Switch>
                     <Route path="/index">
                         <Index />
@@ -24,6 +27,12 @@ function App() {
                     </Route>
                     <Route path="/hits">
                         <Hits />
+                    </Route>
+                    <Route path="/recursive">
+                        <A />
+                    </Route>
+                    <Route path="/hooks">
+                        <HooksTest />
                     </Route>
                 </Switch>
             </div>

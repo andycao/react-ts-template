@@ -12,4 +12,4 @@ ReactDOM.render(
 );
 
 // Learn more about service workers: https://bit.ly/CRA-PWA
-swRegister.register();
+swRegister.unregister();
